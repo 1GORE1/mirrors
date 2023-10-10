@@ -650,7 +650,7 @@ addCommand("view", function(plrs)
 	for i,v in pairs(plrs) do
 		local char = v.Character
 		if not char then continue end
-		local hum = char:FindFirstChild("Head")
+		local hum = char:FindFirstChild("HumanoidRootPart")
 		if not hum then continue end
 		target = hum
 		break
